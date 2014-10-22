@@ -3,7 +3,7 @@ package net.dxs.myscroll;
 import net.dxs.myscroll.utils.AppUtils;
 import net.dxs.myscroll.utils.DensityUtil;
 import net.dxs.myscroll.view.chart.ChartView;
-import net.dxs.myscroll.view.layout.ViewGroupLayout;
+import net.dxs.myscroll.view.layout.MyScrollView;
 import net.dxs.myscroll.view.scroll.HVScrollView;
 import net.dxs.myscroll.view.scroll.ScrollViewListener;
 import net.dxs.myscroll.view.scroll.SyncHorizontalScrollView;
@@ -24,7 +24,7 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 
 @SuppressLint("NewApi")
-public class MainActivity extends Activity implements ScrollViewListener, OnCheckedChangeListener {
+public class MainActivity2 extends Activity implements ScrollViewListener, OnCheckedChangeListener {
 
 	private String[] mArr_periodName_1 = { "期次" };
 	private String[] mArr_periodTitle_1 = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" };
@@ -72,7 +72,7 @@ public class MainActivity extends Activity implements ScrollViewListener, OnChec
 	private FrameLayout mFl_1;
 	private FrameLayout mFl_2;
 	private LinearLayout mLl_main;
-	private ViewGroupLayout msv;
+	private MyScrollView msv;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +92,7 @@ public class MainActivity extends Activity implements ScrollViewListener, OnChec
 	}
 
 	private void initUI() {
-		msv = new ViewGroupLayout(this);
+		msv = new MyScrollView(this);
 		mRg_Ball = (RadioGroup) findViewById(R.id.rg_Ball);
 		mRg_Ball.setOnCheckedChangeListener(this);
 		mLl_main = (LinearLayout) findViewById(R.id.ll_main);

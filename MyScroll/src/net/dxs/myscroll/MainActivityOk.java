@@ -24,7 +24,7 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 
 @SuppressLint("NewApi")
-public class MainActivity extends Activity implements ScrollViewListener, OnCheckedChangeListener {
+public class MainActivityOk extends Activity implements ScrollViewListener, OnCheckedChangeListener {
 
 	private String[] mArr_periodName_1 = { "期次" };
 	private String[] mArr_periodTitle_1 = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" };
