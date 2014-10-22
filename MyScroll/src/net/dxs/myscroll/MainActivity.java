@@ -3,6 +3,7 @@ package net.dxs.myscroll;
 import net.dxs.myscroll.utils.AppUtils;
 import net.dxs.myscroll.utils.DensityUtil;
 import net.dxs.myscroll.view.chart.ChartView;
+import net.dxs.myscroll.view.layout.ViewGroupLayout;
 import net.dxs.myscroll.view.scroll.HVScrollView;
 import net.dxs.myscroll.view.scroll.ScrollViewListener;
 import net.dxs.myscroll.view.scroll.SyncHorizontalScrollView;
@@ -76,13 +77,18 @@ public class MainActivity extends Activity implements ScrollViewListener, OnChec
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		// setContentView(R.layout.activity_main);
 		init();
 	}
 
 	private void init() {
 		initUI();
 		initData();
+		ViewGroupLayout mViewGroupLayout = new ViewGroupLayout(this);
+		mViewGroupLayout.addView(mFl_1);
+		mViewGroupLayout.addView(mFl_2);
+
+		setContentView(mViewGroupLayout);
 	}
 
 	private void initUI() {
@@ -280,20 +286,20 @@ public class MainActivity extends Activity implements ScrollViewListener, OnChec
 		switch (checkedId) {
 		case R.id.rb_RedBall:
 			System.out.println("红球");
-//			 mLl_main.scrollTo(0, 0);
+			// mLl_main.scrollTo(0, 0);
 			// mFl_1.scrollTo(0, 0);
 			// mFl_2.scrollTo(0, 0);
-//			mFl_1.setVisibility(View.VISIBLE);
-//			mFl_2.setVisibility(View.GONE);
+			// mFl_1.setVisibility(View.VISIBLE);
+			// mFl_2.setVisibility(View.GONE);
 
 			break;
 		case R.id.rb_BlueBall:
 			System.out.println("蓝球");
-//			 mLl_main.scrollTo(10, 0);
+			// mLl_main.scrollTo(10, 0);
 			// mFl_1.scrollTo(80, 0);
 			// mFl_2.scrollTo(20, 0);
-//			mFl_1.setVisibility(View.GONE);
-//			mFl_2.setVisibility(View.VISIBLE);
+			// mFl_1.setVisibility(View.GONE);
+			// mFl_2.setVisibility(View.VISIBLE);
 
 			break;
 		}
