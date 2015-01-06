@@ -2,7 +2,7 @@ package net.dxs.myscroll;
 
 import net.dxs.myscroll.utils.AppUtils;
 import net.dxs.myscroll.utils.DensityUtil;
-import net.dxs.myscroll.view.chart.ChartView;
+import net.dxs.myscroll.view.chart.ChartView3surfaceView;
 import net.dxs.myscroll.view.layout.ViewGroupLayout;
 import net.dxs.myscroll.view.scroll.HVScrollView;
 import net.dxs.myscroll.view.scroll.ScrollViewListener;
@@ -231,10 +231,15 @@ public class MainActivity extends Activity implements ScrollViewListener, OnChec
 			mArr_period_1[i] = String.valueOf(201401 + i);
 		}
 
-		ChartView mPeriodName_chartView = new ChartView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_periodName_1);
-		ChartView mPeriodTitle_chartView = new ChartView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_periodTitle_1);
-		ChartView mPeriod_chartView = new ChartView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_period_1);
-		ChartView mNum_chartView = new ChartView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_Num_1);
+//		ChartView mPeriodName_chartView = new ChartView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_periodName_1);
+//		ChartView mPeriodTitle_chartView = new ChartView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_periodTitle_1);
+//		ChartView mPeriod_chartView = new ChartView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_period_1);
+//		ChartView mNum_chartView = new ChartView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_Num_1);
+		
+		ChartView3surfaceView mPeriodName_chartView = new ChartView3surfaceView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_periodName_1);
+		ChartView3surfaceView mPeriodTitle_chartView = new ChartView3surfaceView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_periodTitle_1);
+		ChartView3surfaceView mPeriod_chartView = new ChartView3surfaceView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_period_1);
+		ChartView3surfaceView mNum_chartView = new ChartView3surfaceView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_Num_1);
 
 		mLl_ChartName_1.addView(mPeriodName_chartView);
 		mLl_ChartTitle_1.addView(mPeriodTitle_chartView);
@@ -250,10 +255,15 @@ public class MainActivity extends Activity implements ScrollViewListener, OnChec
 			mArr_period_2[i] = String.valueOf(201501 + i);
 		}
 
-		ChartView mPeriodName_chartView = new ChartView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_periodName_2);
-		ChartView mPeriodTitle_chartView = new ChartView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_periodTitle_2);
-		ChartView mPeriod_chartView = new ChartView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_period_2);
-		ChartView mNum_chartView = new ChartView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_Num_2);
+//		ChartView mPeriodName_chartView = new ChartView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_periodName_2);
+//		ChartView mPeriodTitle_chartView = new ChartView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_periodTitle_2);
+//		ChartView mPeriod_chartView = new ChartView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_period_2);
+//		ChartView mNum_chartView = new ChartView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_Num_2);
+		
+		ChartView3surfaceView mPeriodName_chartView = new ChartView3surfaceView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_periodName_2);
+		ChartView3surfaceView mPeriodTitle_chartView = new ChartView3surfaceView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_periodTitle_2);
+		ChartView3surfaceView mPeriod_chartView = new ChartView3surfaceView(this, DensityUtil.dip2px(this, 80), DensityUtil.dip2px(this, 40), 1, mArr_period_2);
+		ChartView3surfaceView mNum_chartView = new ChartView3surfaceView(this, DensityUtil.dip2px(this, 40), DensityUtil.dip2px(this, 40), 20, mArr_Num_2);
 
 		mLl_ChartName_2.addView(mPeriodName_chartView);
 		mLl_ChartTitle_2.addView(mPeriodTitle_chartView);
